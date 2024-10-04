@@ -2,10 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>32-Adivina la palabra | iGL3Hdev</title>
 </head>
+
 <body>
     
+    <div class="wrapper">
+        <h1>Adivina la palabra</h1>
+        <div class="content">
+            <input type="text" class="type-input" maxlenght="1">
+            <div class="word"></div>
+            <div class="info">
+                <p class="guess">Adivina: <span></span></p>
+                <p class="wrong">Errores: <span></span></p>
+                <p class="hint">Pista: <span></span></p>
+            </div>
+            <div class="buttons">
+                <button class="reset">Reinicia el Juego</button>
+                <button class="showhint">Mostrar pista</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="words-db.js"></script>
+    <script src="index.js"></script>
+
 </body>
 </html>
